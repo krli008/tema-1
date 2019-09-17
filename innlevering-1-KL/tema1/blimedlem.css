@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    grid-column: 1 / -1;
+}
+
+.headline {
+    margin-top: 20px;
+    height: 100px;
+    background-color: #FCFEFF;
+    display: flex;
+    justify-content: center;
+}
+
+.headline img {
+    width: 600px;
+}
+
+header nav {
+    padding-left: 200px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-content: end;
+}
+
+header nav a {
+    padding: 20px 20px;
+    color: rgb(46, 46, 46);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+.active {
+    color: green;
+}
+main {
+    background-color: #7F98CE;
+    padding: 20px 200px;
+    
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.851);
+    padding: 15px;
+    text-align: center;
+}
+
+.line-height {
+    line-height: 1.5;
+}
+
+.line-height button {
+    width: 150px;
+    padding: 10px;
+}
+
+.footer {
+    background-color: rgb(255, 255, 255);
+    grid-column: 1 / -1;
+    text-align: left;
+    padding: 20px 20px;
+    grid-column: 1 / -1;
+
+}
+
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container img {
+    width: 80px;
+}
+
+.container p {
+    padding: 40px;
+}

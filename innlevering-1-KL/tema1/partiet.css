@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    grid-column: 1 / -1;
+}
+
+.headline {
+    margin-top: 20px;
+    height: 100px;
+    background-color: #FCFEFF;
+    display: flex;
+    justify-content: center;
+}
+
+.headline img {
+    width: 600px;
+}
+
+header nav {
+    padding-left: 200px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-content: end;
+}
+
+header nav a {
+    padding: 20px 20px;
+    color: rgb(46, 46, 46);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.active {
+    color: green;
+}
+
+main {
+    background-color: #7F98CE;
+    
+}
+
+.bokser {
+    padding: 30px 400px;
+    display: grid; 
+    grid-gap: 5px 0px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) ); 
+}    
+
+.bokser a {
+    background-color: white;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    overflow: hidden;
+}
+
+.bokser a img {
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.long {
+    grid-column: span 2;
+}
+
+
+.footer {
+    background-color: rgb(255, 255, 255);
+    grid-column: 1 / -1;
+    text-align: left;
+    padding: 20px 20px;
+    grid-column: 1 / -1;
+
+}
+
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container img {
+    width: 80px;
+}
+
+.container p {
+    padding: 40px;
+}

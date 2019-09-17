@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    grid-column: 1 / -1;
+}
+
+.headline {
+    margin-top: 20px;
+    height: 100px;
+    background-color: #FCFEFF;
+    display: flex;
+    justify-content: center;
+}
+
+.headline img {
+    width: 600px;
+}
+
+header nav {
+    padding-left: 200px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-content: end;
+}
+
+header nav a {
+    padding: 20px 20px;
+    color: rgb(46, 46, 46);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+.active {
+    color: green;
+}
+
+main {
+    background-color: #7F98CE;
+    padding: 30px 200px;
+    
+}
+
+.bokser {
+    display: grid; 
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
+}    
+
+.bokser a {
+    background-color: white;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bokser a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    color: white;
+    text-shadow: 0 0 4px black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-auto-rows: 1fr auto;
+    padding-left: 10px
+}
+
+.horisontal {
+    grid-column: span 2;
+}
+
+.horiosontal-2 {
+    grid-column: span 3;
+}
+
+.breddere-skrift {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Hepta Slab', serif;
+    font-weight: 300;
+    line-height: 2;
+    font-size: 20px;
+}
+
+
+.footer {
+    background-color: rgb(255, 255, 255);
+    grid-column: 1 / -1;
+    text-align: left;
+    padding: 20px 20px;
+    grid-column: 1 / -1;
+
+}
+
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container img {
+    width: 80px;
+}
+
+.container p {
+    padding: 40px;
+}
